@@ -1,0 +1,101 @@
+/* Reset CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+}
+
+header {
+  background-color: #ffffff;
+  color: #010101;
+  padding: 1rem;
+  text-align: center;
+}
+
+header h1 {
+  margin-bottom: 0.5rem;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0; /* Atur ke kiri agar logo tetap di pojok kiri atas */
+  background-color: #ffffff; /* Ubah sesuai kebutuhan */
+  padding: 1rem; /* Sesuaikan sesuai kebutuhan */
+}
+
+nav img {
+  height: 50px; /* Sesuaikan tinggi sesuai kebutuhan */
+  width: auto; /* Sesuaikan lebar sesuai kebutuhan */
+  margin-right: 1rem; /* Sesuaikan sesuai kebutuhan */
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  position: fixed;
+  top: 0;
+  right: 0; /* Atur ke kanan agar menu tetap di pojok kanan atas */
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 3rem;
+}
+
+nav ul li a {
+  color: #000000;
+  text-decoration: none;
+}
+/* .about-section {
+  padding: 2rem;
+} */
+
+footer {
+  background-color: #ffffff;
+  color: #000000;
+  text-align: center;
+  padding: 1rem;
+  position: fixed;
+  bottom: 0;
+  width: 100%
+}
+
+.about-section {
+  display: flex;
+}
+
+.about-content {
+  flex: 1;
+}
+
+.image-container {
+  flex: 1;
+  order: -1; /* Mengubah urutan tampilan menjadi di sebelah kiri */
+  margin-right: 20px; /* Memberikan jarak antara gambar dan teks */
+}
+
+.text-content {
+font-size: 25px;
+}
+
+#scrollingText {
+  color: #abbccd;
+  font-size: 24px; /* Atur ukuran teks */
+  animation: scrollText 60s linear infinite; /* Animasi teks berjalan selama 10 detik secara linear */
+}
+
+@keyframes scrollText {
+  0% {
+    transform: translateX(100%); /* Mulai dari posisi di luar layar di sebelah kanan */
+  }
+  100% {
+    transform: translateX(-100%); /* Selesai di posisi di luar layar di sebelah kiri */
+  }
+}
